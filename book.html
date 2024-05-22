@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Book our place!</title>
+        <style>
+            .brochure{
+                width: 42%;
+                background-color: coral;
+                margin-left: 200px;
+                display: block;
+            }
+            body{
+                background-color: brown;
+            }
+            .basic{
+                background-color: burlywood;
+                height: 325px;
+                width: 300px;
+                text-align: center;
+                margin-left: 10px;
+            }
+            .medium{
+                background-color: burlywood;
+                height: 325px;
+                width: 300px;
+                text-align: center;
+                margin-left: 10px;
+            }
+            .semi-medium{
+                background-color: burlywood;
+                height: 325px;
+                width: 300px;
+                text-align: center;
+                margin-left: 10px;
+            }
+            .high{
+                background-color: burlywood;
+                height: 325px;
+                width: 300px;
+                text-align: center;
+                margin-left: 10px;
+            }
+            #yes{
+                align-content: center;
+            }
+            #no{
+                align-content: center;
+
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        
+        <h1>Celebrate with us!!</h1>
+        <script src="./booking.js"></script>
+        <div class="brochure">
+            <table>
+                <tr>
+                    <td><div class="basic">
+                        <h2>A SMALL HALL TO BIG ENOUGH!!</h2>
+                        <button onclick="confirmbooking()"><img src="./base.jpeg" spellcheck="base" height="200" width="200"></button>
+                        <p><span style="font-weight: 600; font-family: 'Times New Roman', Times, serif;">5799/-</span> Only</p>
+                        
+                    </div></td>
+                    <td>
+                    <div class="medium">
+                        <h2>ENJOY OUR PREMIUM OFFERINGS!!</h2>
+                        <button onclick="confirmbooking()"><img src="./base.jpeg" spellcheck="base" height="200" width="200"></button>
+                        <p><span style="font-weight: 600; font-family: 'Times New Roman', Times, serif;">11999/-</span> Only</p>
+                        
+                    </div></td>
+                </tr>
+                <tr>
+                    <td><div class="semi-medium">
+                        <h2>ABODES TO CREATE MEMORIES!!</h2>
+                        <button onclick="confirmbooking()"><img src="./base.jpeg" spellcheck="base" height="200" width="200"></button>
+                        <p><span style="font-weight: 600; font-family: 'Times New Roman', Times, serif;">9999/-</span> Only</p>
+                        
+                    </div></td>
+                    <td><div class="high">
+                        <h2>LITERAL HEAVEN</h2>
+                        <button onclick="confirmbooking()"><img src="./base.jpeg" spellcheck="base" height="200" width="200"></button>
+                        <p><span style="font-weight: 600; font-family: 'Times New Roman', Times, serif;">9999/-</span> Only</p>
+                        
+                    </div></td>
+                </tr>
+            </table>
+            <br>
+            <p style="text-align: center; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: xx-large; font-weight: 300;" id="ask"></p>
+            <button id="yes" onclick="al()">Confirm booking</button>
+            <br>
+            <br>
+            <button id="no" onclick="go_back()">Go back</button>
+        </div>
+    </body>
+</html>

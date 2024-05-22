@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Place your order</title>
+        
+        <style>
+            .outer{
+                background-color: antiquewhite;
+                width: 100%;
+                margin-left: 0px;
+                height: 1000px;
+            }
+            .menu{
+                background-color: burlywood;
+                width: 90%;
+                height: 900px;
+                margin-left: 80px;
+
+            }
+            .new_table{
+                empty-cells: hide;
+                
+                border: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <script src="./order.js"></script>
+        <div class="outer">
+            <div class="menu">
+                <table class="table" border="1" >
+
+                    <tr>
+                        <th>Dish Name</th>
+                        <th>Price(INR)</th>
+                        <th>Click to add</th>
+                    </tr>
+                    <TR>
+                        <Td>Paneer Shahi Thali</Td>
+                        <td>500</td>
+                        <td><button onclick="PST()">Add</button></td>
+                    </TR>
+                    <TR>
+                        <Td>Pasta</Td>
+                        <td>400</td>
+                        <td><button onclick="PASTA()">Add</button></td>
+                    </TR>
+                    <TR>
+                        <Td>Noodles</Td>
+                        <td>275</td>
+                        <td><button onclick="NDL()">Add</button></td>
+                    </TR>
+                    <TR>
+                        <Td>Pizza</Td>
+                        <td>450</td>
+                        <td><button onclick="PIZZA()">Add</button></td>
+                    </TR>
+                    <TR>
+                        <Td>Spring Rolls</Td>
+                        <td>150</td>
+                        <td><button onclick="SR()">Add</button></td>
+                    </TR>
+                    <TR>
+                        <Td>Paneer Tikka </Td>
+                        <td>299</td>
+                        <td><button onclick="PT()">Add</button></td>
+                    </TR>
+                    <TR>
+                        <Td>Chole Bhature</Td>
+                        <td>179</td>
+                        <td><button onclick="CB()">Add</button></td>
+                    </TR>
+                </table>
+
+                <h2>The order placed is as follows below: </h2>
+
+
+                <table   class="new_table">
+                    <tr>
+                        <td><p id="PST"></p></td>
+                        <td><p id="p1"></p></td>
+                    </tr>
+                    <tr>
+                        <td>    <p id="PASTA"></p></td>
+                        <td>    <p id="p2"></p></td>
+                    </tr>
+                    <tr>
+                        <td>    <p id="NDL"></p></td>
+                        <td>    <p id="p3"></p></td>
+                    </tr>
+                    <tr>
+                        <td>    <p id="PIZZA"></p></td>
+                        <td>    <p id="p4"></p></td>
+                    </tr>
+                    <tr>
+                        <td>    <p id="SR"></p></td>
+                        <td>    <p id="p5"></p></td>
+                    </tr>
+                    <tr>
+                        <td>    <p id="PT"></p></td>
+                        <td>    <p id="p6"></p></td>
+                    </tr>
+                    <tr>
+                        <td>    <p id="CB"></p></td>
+                        <td>    <p id="p7"></p></td>
+                    </tr>
+                </table>
+                <button style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onclick="reset_order()">Reset Order</button>
+                <br>
+                <button style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" onclick="place()">Order</button>
+
+                <p id="total"></p>
+                <h3>Want to save on this order, answer 3 out of 5 questions correctly to get a 50% discount</h3>
+                <button onclick="quiz()">Take the Quiz</button>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
